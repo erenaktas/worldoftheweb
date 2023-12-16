@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans', sans-serif;
+}
+*{
+    box-sizing: border-box;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    font-size: 18px;
+    color: #000;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 7px 14px -5px rgba(0, 0, 0, 0.25);
+    height: 80px;
+    padding: 0 80px;
+}
+h1{
+    color: #A83E3E;
+    font-size: 24px;
+    white-space: nowrap;
+}
+.menu-area{
+    display: flex;
+    align-items: center;
+}
+nav{
+    position: relative;
+    margin: 0 32px 0 0;
+    padding: 0 32px 0 0;
+}
+nav::after{
+    content: "|";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+
+}
+nav ul{
+    display: flex;
+    gap: 32px;
+}
+ul li:hover a{
+    color: #A83E3E;
+    text-decoration: underline;
+}
+.login-area{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+.login-area span{
+    font-size: 18px;
+    white-space: nowrap;
+    cursor: pointer;
+}
+.login-area span:hover{
+    color: #A83E3E;
+}
+.btn{
+    background-color: #000;
+    border-radius: 12px;
+    color: #fff;
+    display: flex;
+padding: 10px 16px;
+}
+span.btn:hover{
+    background-color: #A83E3E;
+    color: #fff; 
+}
